@@ -7,6 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## How Launch App
+
+- PHP version 8.2.0
+- Change .env.example to .env
+- inside .env change database from sqlite to mysql
+- Go to file directory and open command prompt
+- Type "composer install"
+- Type "php artisan Key:generate"
+- Type "php artisan migrate"
+- Type "npm install"
+- Type "php artisan serve"
+- Type "npm run dev"
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
