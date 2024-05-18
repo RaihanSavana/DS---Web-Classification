@@ -76,6 +76,13 @@ export default function Login({ status, canResetPassword }) {
                         <span className="ms-2 text-sm text-gray-600">Remember me</span>
                     </label>
                 </div>
+                <div className="block mt-4">
+                    <label className="flex items-center">
+                        <span className="ms-2 text-sm text-gray-600 " >Dont have account? <Link
+                        href={route('register')} className="text-green-500">Register Here</Link></span>
+                    </label>
+                </div>
+
 
                 <div className="flex items-center justify-end mt-4">
                     {canResetPassword && (

@@ -1,3 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.gradient-text {
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing-text steps(40) 3s infinite, blink linear 0.1s infinite;
+  text-wrap: nowrap;
+  display: inline-block;
+  width: max-content;
+  width: 0;
+}
+
+.nav {
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #22C55E;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav:hover .underline {
+  width: 100%;
+}
+
+.nav:hover .underline1 {
+  width: 100%;
+}
+
+.button1 {
+  color: #22C55E;
+}
+
+.button1:hover {
+  color: #E2FCD6;
+  background-color: #22C55E;
+  border-color: #22C55E;
+}
+
+.tab-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 01s ease-in-out, height 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    opacity: 1;
+    height: auto;
+}
+
+
+footer {
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+@keyframes typing-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 340px;
+  }
+}
+
+@keyframes typing-text {
+  to {
+    border-color: transparent;
+  }
+}

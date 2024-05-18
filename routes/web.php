@@ -8,13 +8,17 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+    return Inertia::render('LandingPage',);
+})->name('landingpage');
+
+Route::get('/data-field', function () {
+    return Inertia::render('DataField',);
+})->name('datafield');
+
+Route::get('/crop-label', function () {
+    return Inertia::render('CropLabel',);
+})->name('croplabel');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
