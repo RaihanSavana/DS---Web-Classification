@@ -59,6 +59,7 @@
     transition: opacity 01s ease-in-out, height 0.3s ease-in-out;
 }
 
+
 .tab-content.active {
     opacity: 1;
     height: auto;
