@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "@heroicons/react": "^1.0.6",
+        "@nextui-org/react": "^2.3.6",
         "csv-parser": "^3.0.0",
         "framer-motion": "^11.2.4",
         "papaparse": "^5.4.1",

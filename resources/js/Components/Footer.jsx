@@ -5,10 +5,6 @@ const ContactSection = () => {
         <section id="contact" className="px-20 ">
             <div
                 className="bg-center bg-cover"
-                style={{
-                    backgroundImage:
-                        "url(assets/img/illustrations/footer-bg.png)",
-                }}
             >
                 {/* Background holder */}
             </div>

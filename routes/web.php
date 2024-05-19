@@ -3,6 +3,7 @@
 use App\Http\Controllers\DatasetController;
 use App\Http\Controllers\NaiveBayesController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Crop;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -16,7 +17,7 @@ Route::get('/data-field', function () {
 })->name('datafield');
 
 Route::get('/crop-label', function () {
-    return Inertia::render('CropLabel',);
+    return Inertia::render('CropLabel', ['crops' => Crop::get()]);
 })->name('croplabel');
 
 

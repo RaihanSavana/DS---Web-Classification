@@ -16,6 +16,7 @@
 - Type "composer install"
 - Type "php artisan Key:generate"
 - Type "php artisan migrate"
+- Type "php artisan db:seed"
 - Type "npm install"
 - Type "php artisan serve"
 - Type "npm run dev"

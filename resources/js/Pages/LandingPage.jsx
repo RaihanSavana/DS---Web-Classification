@@ -43,7 +43,7 @@ export default function LandingPage({}) {
                                 dengan merekomendasikan tanaman yang sesuai
                             </p>
                             <button className="button1 bg-transparent rounded-3xl font-semibold py-4 px-8 border border-white hover:border-transparent rounded transition-colors duration-500 mt-1 text-xl">
-                                <Link href={route("login")}>
+                                <Link href='/dataset/naivebayes/1'>
                                     Predict now!
                                 </Link>
                             </button>
@@ -167,8 +167,7 @@ export default function LandingPage({}) {
                                             List of crop
                                         </h6>
                                         <p className="mb-6">
-                                            Tanaman-tanaman yang sudah di
-                                            rekomendasikan.
+                                        Tanaman-tanaman yang telah direkomendasikan.
                                         </p>
                                         <Link href={route("croplabel")}>
                                         <button
